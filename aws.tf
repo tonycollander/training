@@ -69,7 +69,7 @@ resource "aws_key_pair" "hashicorp-training" {
 # these are really Amazon-specific configurations and the beauty of Terraform
 # is that you only have to configure them once and forget about it!
 resource "aws_vpc" "hashicorp-training" {
-  cidr_block           = "10.0.0.0/16"
+  cidr_block           = "10.0.1.0/16"
   enable_dns_hostnames = true
 
   tags {
